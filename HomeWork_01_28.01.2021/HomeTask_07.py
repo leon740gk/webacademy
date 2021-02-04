@@ -2,6 +2,22 @@
 # У пользователя три попытки отгадать.
 # После каждой неудачной попытки компьютер сообщает меньше или больше загаданное число.
 
+# ---------------------------------------------------------------------------------------------------------
+# Can I do it with the "for" cycle? --> Yes, you can:
+# from random import randint
+# for i in range(3):
+#     user_input = int(input("Guess a number: "))
+#     computer_number = randint(0, 100)
+#     if user_input == computer_number:
+#         print(f"You got it ! It is {computer_number}")
+#     elif user_input < computer_number:
+#         print("Your number a bit less, try larger one.")
+#     else:
+#         print("Your number a bit larger, try lesser one.")
+
+# print("Sorry, you missed all your chances.")
+# ---------------------------------------------------------------------------------------------------------
+
 from random import randint
 
 a = randint(1, 100)  # Randomly select a number in range from 1 to 100
